@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="product-viewer.css">
 </head>
 <body>
-    
+    <h1>Viewer</h1>
     <div id="product_viewer"></div>
     <script src="product-viewer.js"></script>
     <script>
@@ -18,9 +18,9 @@
           element: document.getElementById('product_viewer'),
           imagePath: './images',
           filePrefix: 'img',
-          fileExtension: '.jpg'
+          fileExtension: '.png',
+          numberOfImages: 15,
         });
-
         // once loaded, give it a 360 spin
         productViewer.once('loaded', function() {
           productViewer.animate360();
